@@ -1,5 +1,4 @@
-package main.java.com.yourname;
-
+package com.yourname;
 import io.milvus.client.*;
 import io.milvus.param.ConnectParam;
 import io.milvus.param.collection.*;

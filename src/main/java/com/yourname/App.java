@@ -1,4 +1,4 @@
-package main.java.com.yourname;
+package com.yourname;
 import io.milvus.client.*;
 public class App {
     public static void main(String[] args) throws Exception {

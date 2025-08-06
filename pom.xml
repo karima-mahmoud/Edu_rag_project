@@ -1,37 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>main.java.com.yourname</groupId>
   <artifactId>educational-rag-project</artifactId>
   <version>1.0.0</version>
+
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <release>21</release>
   </properties>
+
   <dependencies>
+    <!-- LangChain4j الرئيسي -->
     <dependency>
       <groupId>dev.langchain4j</groupId>
-      <artifactId>langchain4j-core</artifactId>
-      <version>0.26.0</version>
+      <artifactId>langchain4j</artifactId>
+      <version>1.2.0</version>
     </dependency>
+
+    <!-- تكامل OpenAI -->
     <dependency>
       <groupId>dev.langchain4j</groupId>
-      <artifactId>langchain4j-openai</artifactId>
-      <version>0.26.0</version>
+      <artifactId>langchain4j-open-ai</artifactId>
+      <version>1.2.0-beta8</version>
     </dependency>
+
+    <!-- Milvus Java SDK -->
     <dependency>
       <groupId>io.milvus</groupId>
       <artifactId>milvus-sdk-java</artifactId>
       <version>2.3.3</version>
     </dependency>
+
+    <!-- Apache PDFBox لاستخراج النصوص -->
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
       <version>2.0.29</version>
     </dependency>
+
+    <!-- dotEnv لتحميل .env -->
+    <dependency>
+      <groupId>io.github.cdimascio</groupId>
+      <artifactId>java-dotenv</artifactId>
+      <version>5.2.2</version>
+    </dependency>
+
+    <!-- Logging بسيط بـ SLF4J -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
